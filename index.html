@@ -1,0 +1,347 @@
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[SEU NOME] — Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="progress" id="prog"></div>
+
+<!-- SVG filtro duotone usado na foto -->
+<svg width="0" height="0" style="position:absolute">
+  <filter id="duotone-cyber">
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/>
+  </filter>
+</svg>
+
+<button class="fs-btn" onclick="toggleFs()">⛶ Tela cheia</button>
+<button class="print-btn" onclick="doPrint()">🖨 PDF</button>
+
+<!-- ===== TOC (menu lateral) ===== -->
+<nav class="toc">
+  <div class="toc-logo">PORTFÓLIO</div>
+  <div class="toc-name">[SEU NOME]</div>
+  <ul>
+    <li><a href="#hero"><span class="toc-dot"></span> Início</a></li>
+    <li><a href="#sobre"><span class="toc-dot"></span> Sobre</a></li>
+    <li><a href="#superpoderes"><span class="toc-dot"></span> Superpoderes</a></li>
+    <li><a href="#cases"><span class="toc-dot"></span> Cases</a></li>
+    <li><a href="#projetos"><span class="toc-dot"></span> Projetos</a></li>
+    <li><a href="#experiencia"><span class="toc-dot"></span> Experiência</a></li>
+    <li><a href="#formacao"><span class="toc-dot"></span> Formação</a></li>
+    <li><a href="#ferramentas"><span class="toc-dot"></span> Ferramentas</a></li>
+    <li><a href="#contato"><span class="toc-dot"></span> Contato</a></li>
+  </ul>
+</nav>
+
+<!-- ===== CONTEÚDO ===== -->
+<div class="content">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-badge"><span class="badge-dot"></span> DISPONÍVEL PARA PROJETOS</div>
+
+    <div class="photo-wrap">
+      <div class="photo-ring-el"></div>
+      <div class="photo-ring-el"></div>
+      <div class="photo-ring-el"></div>
+      <div class="photo-glow"></div>
+      <div class="photo-circle">
+        <img src="assets/foto.jpg" alt="[SEU NOME]">
+      </div>
+    </div>
+
+    <h1 class="au d1"><span class="gt-full">[SEU NOME]</span></h1>
+    <p class="hero-title au d2">[SEU CARGO / TÍTULO PROFISSIONAL]</p>
+    <p class="hero-tagline au d3">[Frase curta sobre o que você faz e seu diferencial]</p>
+    <span class="hero-loc au d4">📍 [Sua cidade, Estado]</span>
+
+    <div class="stats-grid">
+      <div class="stat-item au d5">
+        <span class="stat-num s-cyan">[N]+</span>
+        <span class="stat-label">Anos de experiência</span>
+      </div>
+      <div class="stat-item au d5">
+        <span class="stat-num s-pink">[N]+</span>
+        <span class="stat-label">Projetos entregues</span>
+      </div>
+      <div class="stat-item au d6">
+        <span class="stat-num s-purple">[N]+</span>
+        <span class="stat-label">Clientes atendidos</span>
+      </div>
+      <div class="stat-item au d6">
+        <span class="stat-num s-white">[N]</span>
+        <span class="stat-label">Certificações</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="sec-label">Sobre mim</div>
+    <h2 class="au">Quem <span class="gt-cyan">sou eu</span></h2>
+    <p class="au" style="color:var(--grey);line-height:1.7;max-width:720px">
+      [Escreva aqui um parágrafo sobre sua trajetória, valores e o que te motiva profissionalmente.]
+    </p>
+  </section>
+
+  <!-- SUPERPODERES -->
+  <section id="superpoderes">
+    <div class="sec-label">Habilidades</div>
+    <h2 class="au">Meus <span class="gt-pink">superpoderes</span></h2>
+    <div class="sp-grid">
+      <div class="sp-card au d1">
+        <div class="sp-icon">💡</div>
+        <div class="sp-name">[Habilidade 1]</div>
+        <div class="sp-desc">[Breve descrição]</div>
+      </div>
+      <div class="sp-card au d2">
+        <div class="sp-icon">⚙️</div>
+        <div class="sp-name">[Habilidade 2]</div>
+        <div class="sp-desc">[Breve descrição]</div>
+      </div>
+      <div class="sp-card au d3">
+        <div class="sp-icon">🎯</div>
+        <div class="sp-name">[Habilidade 3]</div>
+        <div class="sp-desc">[Breve descrição]</div>
+      </div>
+      <div class="sp-card au d4">
+        <div class="sp-icon">🚀</div>
+        <div class="sp-name">[Habilidade 4]</div>
+        <div class="sp-desc">[Breve descrição]</div>
+      </div>
+      <div class="sp-card au d5">
+        <div class="sp-icon">🧠</div>
+        <div class="sp-name">[Habilidade 5]</div>
+        <div class="sp-desc">[Breve descrição]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases">
+    <div class="sec-label">Resultados</div>
+    <h2 class="au">Cases de <span class="gt-cyan">destaque</span></h2>
+    <div class="cases-grid">
+      <div class="case-card au d1">
+        <span class="case-tag ct-cyan">[Categoria]</span>
+        <span class="case-metric s-cyan">[+X%]</span>
+        <div class="case-title">[Título do case]</div>
+        <div class="case-ctx">[Contexto/resultado alcançado]</div>
+      </div>
+      <div class="case-card au d2">
+        <span class="case-tag ct-pink">[Categoria]</span>
+        <span class="case-metric s-pink">[+X%]</span>
+        <div class="case-title">[Título do case]</div>
+        <div class="case-ctx">[Contexto/resultado alcançado]</div>
+      </div>
+      <div class="case-card au d3">
+        <span class="case-tag ct-purple">[Categoria]</span>
+        <span class="case-metric s-purple">[+X%]</span>
+        <div class="case-title">[Título do case]</div>
+        <div class="case-ctx">[Contexto/resultado alcançado]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="sec-label">Portfólio</div>
+    <h2 class="au">Projetos <span class="gt-pink">selecionados</span></h2>
+
+    <div class="proj-case au">
+      <div class="proj-case-header">
+        <span class="proj-case-tag" style="background:rgba(0,245,255,.1);color:var(--cyan)">[Categoria]</span>
+        <div class="proj-case-title">[Nome do Projeto]</div>
+        <p class="proj-case-desc">[Descrição breve do projeto e do problema resolvido]</p>
+        <ul class="proj-case-bullets">
+          <li>[Ponto principal 1]</li>
+          <li>[Ponto principal 2]</li>
+          <li>[Ponto principal 3]</li>
+        </ul>
+      </div>
+      <div class="proj-case-divider"></div>
+      <div class="proj-links">
+        <a href="#" class="proj-link-btn pla-cyan">🔗 Ver projeto</a>
+        <a href="#" class="proj-link-btn pla-purple">💻 GitHub</a>
+      </div>
+      <div class="proj-imgs">
+        <div class="proj-img-wrap">
+          <img src="assets/projeto1-a.jpg" alt="[Projeto]">
+          <div class="proj-img-label">[Legenda da imagem]</div>
+        </div>
+        <div class="proj-img-wrap">
+          <img src="assets/projeto1-b.jpg" alt="[Projeto]">
+          <div class="proj-img-label">[Legenda da imagem]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA / TIMELINE -->
+  <section id="experiencia">
+    <div class="sec-label">Trajetória</div>
+    <h2 class="au">Experiência <span class="gt-cyan">profissional</span></h2>
+
+    <div class="tl-hint">👉 Clique em um ponto da timeline para ver os detalhes</div>
+
+    <div class="tl-container">
+      <div class="tl-track">
+        <div class="tl-inner">
+
+          <!-- NODE 1 -->
+          <div class="tl-node"
+               data-role="[Cargo]"
+               data-company="[Empresa]"
+               data-period="[Período, ex: 2023 — Atual]"
+               data-bullets="[Responsabilidade 1]|[Responsabilidade 2]|[Responsabilidade 3]">
+            <div class="tl-node-dot"></div>
+            <div class="tl-connector"></div>
+            <div class="tl-card-wrap">
+              <div class="tl-card">
+                <div class="tl-period">[Período]</div>
+                <div class="tl-role">[Cargo]</div>
+                <div class="tl-company">[Empresa]</div>
+                <div class="tl-preview">[Resumo curto da atuação]</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NODE 2 -->
+          <div class="tl-node"
+               data-role="[Cargo Anterior]"
+               data-company="[Empresa Anterior]"
+               data-period="[Período]"
+               data-bullets="[Responsabilidade 1]|[Responsabilidade 2]">
+            <div class="tl-node-dot"></div>
+            <div class="tl-connector"></div>
+            <div class="tl-card-wrap">
+              <div class="tl-card">
+                <div class="tl-period">[Período]</div>
+                <div class="tl-role">[Cargo Anterior]</div>
+                <div class="tl-company">[Empresa Anterior]</div>
+                <div class="tl-preview">[Resumo curto da atuação]</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adicione mais .tl-node conforme necessário -->
+
+        </div>
+      </div>
+
+      <!-- PAINEL DE DETALHE -->
+      <div class="tl-detail-panel" id="tl-detail-panel">
+        <div class="dp-header">
+          <div>
+            <div class="dp-role" id="dp-role"></div>
+            <div class="dp-company" id="dp-company"></div>
+            <div class="dp-period" id="dp-period"></div>
+          </div>
+          <button class="dp-close" id="dp-close">FECHAR ✕</button>
+        </div>
+        <ul class="dp-bullets" id="dp-bullets"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section id="formacao">
+    <div class="sec-label">Estudos</div>
+    <h2 class="au">Formação <span class="gt-pink">acadêmica</span></h2>
+    <div class="edu-grid">
+      <div class="edu-card au d1">
+        <div class="edu-badge">🎓</div>
+        <div class="edu-degree">[Curso]</div>
+        <div class="edu-institution">[Instituição]</div>
+        <div class="edu-period">[Período]</div>
+        <div class="edu-note">[Observação, ex: ênfase ou destaque]</div>
+      </div>
+    </div>
+
+    <div class="monitoria-card au d2">
+      <div class="monitoria-icon">📚</div>
+      <div>
+        <div class="monitoria-label">Monitoria / Extra</div>
+        <div class="monitoria-title">[Título da atividade]</div>
+        <div class="monitoria-sub">[Instituição/Disciplina]</div>
+        <div class="monitoria-period">[Período]</div>
+        <div class="monitoria-desc">[Descrição breve]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FERRAMENTAS / IDIOMAS -->
+  <section id="ferramentas">
+    <div class="sec-label">Stack & Idiomas</div>
+    <h2 class="au">Ferramentas <span class="gt-cyan">e idiomas</span></h2>
+
+    <div class="tools-wrap">
+      <span class="tool-tag">[Ferramenta 1]</span>
+      <span class="tool-tag">[Ferramenta 2]</span>
+      <span class="tool-tag">[Ferramenta 3]</span>
+      <span class="tool-tag">[Ferramenta 4]</span>
+      <span class="tool-tag">[Ferramenta 5]</span>
+    </div>
+
+    <div class="lang-grid">
+      <div class="ct-card lang-item">
+        <span class="lang-dot" style="background:var(--cyan)"></span>
+        <div>
+          <div class="lang-name">Português</div>
+          <div class="lang-level">Nativo</div>
+        </div>
+      </div>
+      <div class="ct-card lang-item">
+        <span class="lang-dot" style="background:var(--pink)"></span>
+        <div>
+          <div class="lang-name">Inglês</div>
+          <div class="lang-level">[Nível]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="sec-label">Vamos falar?</div>
+    <h2 class="au">Meu <span class="gt-pink">contato</span></h2>
+    <div class="contact-grid">
+      <div class="ct-card au d1">
+        <div class="ct-icon" style="background:rgba(0,245,255,.1)">📧</div>
+        <div class="ct-info">
+          <div class="ct-lbl">Email</div>
+          <div class="ct-val"><a href="mailto:seuemail@email.com">seuemail@email.com</a></div>
+        </div>
+      </div>
+      <div class="ct-card au d2">
+        <div class="ct-icon" style="background:rgba(123,47,255,.12)">💼</div>
+        <div class="ct-info">
+          <div class="ct-lbl">LinkedIn</div>
+          <div class="ct-val"><a href="#" target="_blank">linkedin.com/in/seuperfil</a></div>
+        </div>
+      </div>
+      <div class="ct-card au d3">
+        <div class="ct-icon" style="background:rgba(255,45,155,.1)">💻</div>
+        <div class="ct-info">
+          <div class="ct-lbl">GitHub</div>
+          <div class="ct-val"><a href="#" target="_blank">github.com/seuperfil</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
